@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Produtos - Eletro Stack</title>
     <link href="css/style.css" type="text/css" rel="stylesheet">
+    <script src="js/funcoes.js"></script>
 </head>
 <body style="font-family: sans-serif;">
 
@@ -27,117 +28,94 @@
             <div class="categoria">
                 <h3>Categorias</h3>
                 <ul>
-                    <li>Celulares (4)</li>
-                    <li>Notebooks (3)</li>
-                    <li>Consoles (2)</li>
-                    <li>Televisões (3)</li>
+                    <li onclick="exibirTodos()">Todos (12)</li>
+                    <li onclick="exibirCategorias('celular')">Celulares (4)</li>
+                    <li onclick="exibirCategorias('notebook')">Notebooks (3)</li>
+                    <li onclick="exibirCategorias('console')">Consoles (2)</li>
+                    <li onclick="exibirCategorias('televisao')">Televisões (3)</li>
                 </ul>
             </div><!-- categoria -->
 
             <div class="container-produtos">
-                <div class="produtos">
-                    <div class="imagem">
-                        <a href="http://bit.ly/samsung_eletrostack" target="_blank"><img src="./imagens/galaxys10.jpg" width="100%"></a>
-                    </div><!-- imagem -->
+                <div class="produtos" id="celular">
+                    <img onclick="destaque(this)" src="./imagens/galaxys10.jpg" width="120">
                     <p>Smartphone Samsung Galaxy S10 128GB Branco 4G<p>
                     <p><strike>R$ 2.699,00</strike><p>
                     <p class="red">R$2.429,10<p>
                 </div><!-- produtos -->
 
-                <div class="produtos">
-                    <div class="imagem">
-                        <a href="http://bit.ly/motorola_eletrostack" target="_blank"><img src="./imagens/mototrola.png" width="100%"></a>
-                    </div><!-- imagem -->
+                <div class="produtos" id="celular">
+                    <img onclick="destaque(this)" src="./imagens/mototrola.png" width="120">
                     <p>Smartphone Motorola One Vision Bronze<p>
                     <p><strike>R$ 1.999,00</strike><p>
                     <p class="red">R$ 1.709,00<p>
                 </div><!-- produtos -->
 
-                <div class="produtos">
-                    <div class="imagem">
-                        <a href="http://bit.ly/asus_eletrostack" target="_blank"><img src="./imagens/zenfone.png" width="100%"></a>
-                    </div><!-- imagem -->
+                <div class="produtos" id="celular">
+                    <img onclick="destaque(this)" src="./imagens/zenfone.png" width="120">
                     <p>ASUS ZenFone 6 6GB/128GB Preto<p>
                     <p><strike>R$ 4.489,00</strike><p>
                     <p class="red">R$3.833,15<p>
                 </div><!-- produtos -->
 
-                <div class="produtos">
-                    <div class="imagem">
-                        <a href="http://bit.ly/iphone_eletrostack" target="_blank"><img src="./imagens/iphone.png" width="100%"></a>
-                    </div><!-- imagem -->
+                <div class="produtos" id="celular">
+                    <img onclick="destaque(this)" src="./imagens/iphone.png" width="120">
                     <p>iPhone XR Apple Preto 64GB, Tela Retina LCD de 6,1”, iOS 12<p>
                     <p><strike>R$3.772,98</strike><p>
                     <p class="red">R$3.399,00<p>
                 </div><!-- produtos -->
 
-                <div class="produtos">
-                    <div class="imagem">
-                        <a href="http://bit.ly/lenovo_eletrostack" target="_blank"><img src="./imagens/lenovo.png" width="100%"></a>
-                    </div><!-- imagem -->
+                <div class="produtos" id="notebook">
+                    <img onclick="destaque(this)" src="./imagens/lenovo.png" width="120">
                     <p>Notebook Lenovo Ultrafino ideapad S145 i7 8565U 8GB 1TB<p>
                     <p><strike>R$ 4.489,00</strike><p>
                     <p class="red">R$3.833,15<p>
                 </div><!-- produtos -->
 
-                <div class="produtos">
-                    <div class="imagem">
-                        <a href="http://bit.ly/acer_eletrostack" target="_blank"><img src="./imagens/acer.png" width="100%"></a>
-                    </div><!-- imagem -->
+                <div class="produtos" id="notebook">
+                    <img onclick="destaque(this)" src="./imagens/acer.png" width="120">
                     <p>Notebook Acer AMD Ryzen 5-3500U 8GB 1TB<p>
                     <p><strike>R$3.899,00</strike><p>
                     <p class="red">R$3.999,00<p>
                 </div><!-- produtos -->
 
-                <div class="produtos">
-                    <div class="imagem">
-                        <a href="https://bit.ly/2GinHT2" target="_blank"><img src="./imagens/notebook_samsung.jpg" width="100%"></a>
-                    </div><!-- imagem -->
+                <div class="produtos" id="notebook">
+                    <img onclick="destaque(this)" src="./imagens/notebook_samsung.jpg" width="120">
                     <p>Notebook Samsung Dual Core 4GB 500GB Tela 15.6<p>
                     <p><strike>R$2.999,00</strike><p>
                     <p class="red">R$2.599,00<p>
                 </div><!-- produtos -->
 
-                <div class="produtos">
-                    <div class="imagem">
-                        <a href="http://bit.ly/ps4_eletrostack"  target="_blank"><img src="./imagens/ps4.jpg" width="100%"></a>
-                    </div><!-- imagem -->
+                <div class="produtos" id="console">
+                    <img onclick="destaque(this)" src="./imagens/ps4.jpg" width="120">
                     <p>Console Playstation 4 Slim 1TB Bundle 11 + Just Dance 2020 + MediEvil + Jogos PlayLink<p>
                     <p><strike>R$2.899,00</strike><p>
                     <p class="red">R$2.649,00<p>
                 </div><!-- produtos -->
 
-                <div class="produtos">
-                    <div class="imagem">
-                        <a href="http://bit.ly/xbox_eletrostack" target="_blank"><img src="./imagens/xbox.jpg" width="100%"></a>
-                    </div><!-- imagem -->
+                <div class="produtos" id="console">
+                    <img onclick="destaque(this)" src="./imagens/xbox.jpg" width="120">
                     <p>Console Xbox One S 1TB + Jogo Star Wars Jedi: Fallen Order Deluxe Edition<p>
                     <p><strike>R$3.299,00</strike><p>
                     <p class="red">R$2.999,00<p>
                 </div><!-- produtos -->
 
-                <div class="produtos">
-                    <div class="imagem">
-                        <a href="http://bit.ly/lg_eletrostack" target="_blank"><img src="./imagens/tv_lg.jpg" width="100%"></a>
-                    </div><!-- imagem -->
+                <div class="produtos" id="televisao">
+                    <img onclick="destaque(this)" src="./imagens/tv_lg.jpg" width="120">
                     <p>Smart TV LED 50" UHD 4K LG 50UN7310PSC<p>
                     <p><strike>R$ 3.099,00</strike><p>
                     <p class="red">R$2.299,00<p>
                 </div><!-- produtos -->
 
-                <div class="produtos">
-                    <div class="imagem">
-                        <a href="http://bit.ly/phillips_eletrostack"target="_blank"><img src="./imagens/tv_phillips.jpg" width="100%"></a>
-                    </div><!-- imagem -->
+                <div class="produtos" id="televisao">
+                    <img onclick="destaque(this)" src="./imagens/tv_phillips.jpg" width="120">
                     <p>Smart TV LED 50" 4K Philips 50PUG6654/78<p>
                     <p><strike>R$ 2.399,00</strike><p>
                     <p class="red">R$2.099,00<p>
                 </div><!-- produtos -->
 
-                <div class="produtos">
-                    <div class="imagem">
-                        <a href="http://bit.ly/tcl_eletrostack"  target="_blank"><img src="./imagens/tv_tcl.jpg" width="100%"></a>
-                    </div><!-- imagem -->
+                <div class="produtos" id="televisao">
+                    <img onclick="destaque(this)" src="./imagens/tv_tcl.jpg" width="120">
                     <p>Smart TV LED 50" 4K TCL 50P8M<p>
                     <p><strike>R$2.489,00</strike><p>
                     <p class="red">R$2.199,00<p>
