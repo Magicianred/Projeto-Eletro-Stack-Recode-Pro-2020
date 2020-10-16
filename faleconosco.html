@@ -3,54 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <title>Contato - Eletro Stack</title>
+    <link href="css/style.css" type="text/css" rel="stylesheet">
 </head>
-<body style="font-family: sans-serif;">
+<body>
 
-    <!-- menu -->
-    <table bgcolor="#2e2e2e" width="100%">
-        <tr>
-            <td align="center" width="25%"><a href="index.html"><font color="white"><img width="400px" src="./imagens/LOGO1.png" alt="Eletro Stack"></font></a></td>
-            <td align="center" width="25%"><a href="produtos.html"><font color="white">Produtos</font></a></td>
-            <td align="center" width="25%"><a href="lojas.html"><font color="white">Lojas</font></a></td>
-            <td align="center" width="25%"><a href="faleconosco.html"><font color="white">Fale conosco</font></a></td>
-        </tr>
-    </table>
-    <!-- menu -->
+    <header class="menu">
+        <div class="center">
+            <a href="index.html"><img width="400" src="imagens/LOGO1.png"></a>
 
+            <div class="menu-itens">
+                <ul>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="lojas.html">Lojas</a></li>
+                    <li><a class="fale-conosco" href="faleconosco.html">Fale conosco</a></li>
+                </ul>
+            </div><!-- menu-itens -->
+        </div><!-- center -->
+        <div class="clear"></div>
+    </header><!-- menu -->
     <hr>
 
-    <!-- fale conosco -->
-    <table align="center">
-        <tr border="0" width="100%" cellpadding="20">
-            <td width="50%" align="center">
-                <img src="./imagens/email.png" width="60px">
-                <font>contato@eltrostack.com.br</font>
-            </td>
+    <form class="formulario">
+        <h2>Envie uma mensagem para nós</h2>
+        <div class="input">
+            <span>Nome</span>
+            <input type="text" placeholder="Digite seu nome" required>
+        </div><!-- input -->
 
-            <td width="50%" align="center">
-                <img src="./imagens/whatsapp.jpg" width="60px">
-                <font>(11) 99999 9999</font>
-            </td>
-        </tr>
-    </table><br>
-    <!-- fale conosco -->
+        <div class="input">
+            <span>Mensagem</span>
+            <textarea placeholder="Digite sua mensagem"></textarea>
+        </div><!-- input -->
 
-    <!-- formulario -->
-    <form>
-        <h4>Nome</h4>
-        <input type="text" style="width: 400px; height: 30px;" placeholder="Digite seu nome">
-        <h4>Mensagens</h4>
-        <textarea cols="50" rows="10" placeholder="Digite sua mensagem" style="width: 400px;"></textarea><br>
-        <input type="submit" value="Enviar" style="width: 100px; height: 40px; border: 0; background-color: #007eff; color: white">
+        <div class="input-submit">
+            <input type="submit" value="Enviar">
+        </div><!-- input-submit -->
+
+        <div class="email">
+            <img src="imagens/email.png" width="50">
+            <p>E-mail</p>
+        </div><!-- img -->
+
+        <div class="whatsapp">
+            <img src="imagens/whatsapp.jpg" width="50">
+            <p>whatsapp</p>
+        </div><!-- img -->
+        <div class="clear"></div>
     </form>
-    <!-- formulario -->
 
-    <h4 align="center">
-        <font color="red">Formas de pagamento</font><br>
-        <img width="400px" src="./imagens/formas_pagamento.png" alt="Formas de Pagamento"><br>
-    </h4>
+    <section class="formas-pagamento">
+        <h4>Formas de pagamento</h4>
+        <img width="400" src="imagens/formas_pagamento.png">
+    </section> <!-- formas de pagamento -->
 
-    <center><font size="2">&copy; Recode Pro 2020</font></center>
+    <footer class="rodape">
+        <p>&copy; Recode Pro 2020</p>
+    </footer><!-- rodape -->
 
 </body>
 </html>
