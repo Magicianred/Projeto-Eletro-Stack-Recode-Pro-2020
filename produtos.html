@@ -2,137 +2,267 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Produtos - Eletro Stack</title>
-    <link href="css/style.css" type="text/css" rel="stylesheet">
-    <script src="js/funcoes.js"></script>
+    <title>Eletro Stack</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/produtos.css" rel="stylesheet">
+    <link rel="icon" href="imagens/icon-logo.png">
+    <script async defer src="js/script.js"></script>
 </head>
-<body style="font-family: sans-serif;">
-
-    <header class="menu">
-        <div class="center">
-            <a href="index.html"><img width="400" src="imagens/LOGO1.png"></a>
+<body>
+    
+    <header>
+        <div class="menu">
+            <img src="imagens/logo2.png" alt="Logo Eletro Stack">
 
             <div class="menu-itens">
                 <ul>
-                    <li><a class="produtos-menu" href="produtos.html">Produtos</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
                     <li><a href="lojas.html">Lojas</a></li>
-                    <li><a href="faleconosco.html">Fale conosco</a></li>
+                    <li><a href="faleconosco.html">Fale Conosco</a></li>
                 </ul>
             </div><!-- menu-itens -->
-        </div><!-- center -->
+        </div><!-- menu -->
+    </header>
+
+    <section class="container">
+        <div class="category">
+            <h2>Categorias</h2>
+            <ul>
+                <li><a href="#" onclick="exibirTodos()">Todos</a></li>
+                <li><a href="#" onclick="exibirCategorias('celular')">Celular</a></li>
+                <li><a href="#" onclick="exibirCategorias('notebook')">Notebook</a></li>
+                <li><a href="#" onclick="exibirCategorias('console')">Consoles</a></li>
+                <li><a href="#" onclick="exibirCategorias('televisao')">Televisões</a></li>
+            </ul>
+        </div><!-- category -->
+
+        <div class="container-product">
+            <div class="product" id="celular">
+                <div class="img-product"><img src="imagens/galaxys10.png" alt="Galaxy S10" title="Galaxy S10"></div>
+
+                <div class="title-product">
+                    <p>Smartphone Samsung Galaxy S10 128GB Branco 4G</p>
+                </div>
+
+                <div class="price-product">
+                    <h3 class="canceled">R$ 2.499,00</h3>
+                    <h2>R$ 2.299,<small>00</small></h2>
+                </div>
+
+                <div class="button-buy">
+                    <button class="buy" onclick="emBreve()">Comprar</button>
+                </div>
+            </div><!-- product -->
+
+            <div class="product" id="celular">
+                <div class="img-product"><img src="imagens/motorola.png" alt="Moto E6" title="Moto E6"></div>
+
+                <div class="title-product">
+                    <p>Smartphone Moto E6 Play 32GB Dual Chip Android Tela 5.5" MT6739 4G Câmera 13MP - Azul Metálico.</p>
+                </div>
+
+                <div class="price-product">
+                    <h3 class="canceled">R$ 1.249,90</h3>
+                    <h2>R$ 1.021,<small>90</small></h2>
+                </div>
+
+                <div class="button-buy">
+                    <button class="buy" onclick="emBreve()">Comprar</button>
+                </div>
+            </div><!-- product -->
+
+            <div class="product" id="celular">
+                <div class="img-product"><img src="imagens/iphone.png" alt="Galaxy S10" title="Iphone 11"></div>
+
+                <div class="title-product">
+                    <p>iPhone 11 64GB Vermelho iOS 4G Wi-Fi Câmera 12MP - Apple</p>
+                </div>
+
+                <div class="price-product">
+                    <h3 class="canceled">R$ 4.879,00</h3>
+                    <h2>R$ 4.537,<small>47</small></h2>
+                </div>
+
+                <div class="button-buy">
+                    <button class="buy" onclick="emBreve()">Comprar</button>
+                </div>
+            </div><!-- product -->
+
+            <div class="product" id="celular">
+                <div class="img-product"><img src="imagens/lgk51s.png" alt="LG K51S" title="LG K51S"></div>
+
+                <div class="title-product">
+                    <p>Smartphone LG K51S Dual Chip Android 9.0 Pie 6.55" Octa Core 64GB 4G Câmera 32MP+5MP+2MP+2MP - Vermelho</p>
+                </div>
+
+                <div class="price-product">
+                    <h3 class="canceled">R$ 1.389,90</h3>
+                    <h2>R$ 1.320,<small>40</small></h2>
+                </div>
+
+                <div class="button-buy">
+                    <button class="buy" onclick="emBreve()">Comprar</button>
+                </div>
+            </div><!-- product -->
+
+            <div class="product" id="notebook">
+                <div class="img-product"><img src="imagens/notebookasus.png" alt="Asus Vivobook" title="Asus Vivobook"></div>
+
+                <div class="title-product">
+                    <p>Notebook Asus Vivobook X512FB-BR468T Intel Core I5 8GB (Geforce MX110 com 2GB) 1TB W10 15,6'' Cinza Escuro</p>
+                </div>
+
+                <div class="price-product">
+                    <h3 class="canceled">R$ 3.859,69</h3>
+                    <h2>R$ 3.699,<small>99</small></h2>
+                </div>
+
+                <div class="button-buy">
+                    <button class="buy" onclick="emBreve()">Comprar</button>
+                </div>
+            </div><!-- product -->
+
+            <div class="product" id="notebook">
+                <div class="img-product"><img src="imagens/notebookdell.png" alt="Dell Inspiron" title="Dell Inspiron"></div>
+
+                <div class="title-product">
+                    <p>Notebook Dell Inspiron I15-3583-A3XP 8ª Intel Core I5 8GB 1TB15,6" W10 Preto</p>
+                </div>
+
+                <div class="price-product">
+                    <h3 class="canceled">R$ 3.889,69</h3>
+                    <h2>R$ 3.849,<small>99</small></h2>
+                </div>
+
+                <div class="button-buy">
+                    <button class="buy" onclick="emBreve()">Comprar</button>
+                </div>
+            </div><!-- product -->
+
+            <div class="product" id="notebook">
+                <div class="img-product"><img src="imagens/notebooklenovo.png" alt="Lenovo Ultrafino Ideapad s145" title="Lenovo Ultrafino Ideapad s145"></div>
+
+                <div class="title-product">
+                    <p>Notebook Lenovo Ultrafino ideapad S145 i7 8565U 8GB 1TB</p>
+                </div>
+
+                <div class="price-product">
+                    <h3 class="canceled">R$ 4.489,00</h3>
+                    <h2>R$3.833,<small>15</small></h2>
+                </div>
+
+                <div class="button-buy">
+                    <button class="buy" onclick="emBreve()">Comprar</button>
+                </div>
+            </div><!-- product -->
+
+            <div class="product" id="console">
+                <div class="img-product"><img src="imagens/nintendo.png" alt="Nintendo Switch" title="Nintendo Switch"></div>
+
+                <div class="title-product">
+                    <p>Console Nintendo Switch 32gb Neon Blue Red</p>
+                </div>
+
+                <div class="price-product">
+                    <h3 class="canceled">R$ 3.289,00</h3>
+                    <h2>R$ 3.199,<small>99</small></h2>
+                </div>
+
+                <div class="button-buy">
+                    <button class="buy" onclick="emBreve()">Comprar</button>
+                </div>
+            </div><!-- product -->
+
+            <div class="product" id="console">
+                <div class="img-product"><img src="imagens/ps4.png" alt="Console Playstation 4" title="Console Playstation 4"></div>
+
+                <div class="title-product">
+                    <p>Console Playstation 4 Hits 1TB Bundle 17 - Dreams + Marvel's Spider-Man + Infamous Second Son - PS4</p>
+                </div>
+
+                <div class="price-product">
+                    <h3 class="canceled">R$ 2.789,00</h3>
+                    <h2>R$ 2.669,<small>99</small></h2>
+                </div>
+
+                <div class="button-buy">
+                    <button class="buy" onclick="emBreve()">Comprar</button>
+                </div>
+            </div><!-- product -->
+
+            <div class="product" id="console">
+                <div class="img-product"><img src="imagens/xbox.png" alt="Console Xbox One S" title="Console Xbox One S"></div>
+
+                <div class="title-product">
+                    <p>Console Xbox One S 1tb + 1 Controle + Game Star Wars Jedi Fallen Order + 1 Mês Xbox Live Gold</p>
+                </div>
+
+                <div class="price-product">
+                    <h3 class="canceled">R$ 2.789,00</h3>
+                    <h2>R$ 2.649,<small>99</small></h2>
+                </div>
+
+                <div class="button-buy">
+                    <button class="buy" onclick="emBreve()">Comprar</button>
+                </div>
+            </div><!-- product -->
+
+            <div class="product" id="televisao">
+                <div class="img-product"><img src="imagens/tvlg.png" alt="TV LG Smart" title="TV LG Smart"></div>
+
+                <div class="title-product">
+                    <p>Smart TV LED 50" UHD 4K LG 50UN7310PSC</p>
+                </div>
+
+                <div class="price-product">
+                    <h3 class="canceled">R$ 3.099,00</h3>
+                    <h2>R$2.299,<small>00</small></h2>
+                </div>
+
+                <div class="button-buy">
+                    <button class="buy" onclick="emBreve()">Comprar</button>
+                </div>
+            </div><!-- product -->
+
+            <div class="product" id="televisao">
+                <div class="img-product"><img src="imagens/tvphillips.png" alt="TV Phillips Smart" title="TV Phillips Smart"></div>
+
+                <div class="title-product">
+                    <p>Smart TV LED 50" 4K Philips 50PUG6654/78</p>
+                </div>
+
+                <div class="price-product">
+                    <h3 class="canceled">R$ 2.399,00</h3>
+                    <h2>R$2.099,<small>00</small></h2>
+                </div>
+
+                <div class="button-buy">
+                    <button class="buy" onclick="emBreve()">Comprar</button>
+                </div>
+            </div><!-- product -->
+
+            <div class="product" id="televisao">
+                <div class="img-product"><img src="imagens/tvtcl.png" alt="TV TCL Smart" title="TV TCL Smart"></div>
+
+                <div class="title-product">
+                    <p>Smart TV LED 50" 4K TCL 50P8M</p>
+                </div>
+
+                <div class="price-product">
+                    <h3 class="canceled">R$2.489,00</h3>
+                    <h2>R$2.199,<small>00</small></h2>
+                </div>
+
+                <div class="button-buy">
+                    <button class="buy" onclick="emBreve()">Comprar</button>
+                </div>
+            </div><!-- product -->
+        </div><!-- container-product -->
         <div class="clear"></div>
-    </header><!-- menu -->
-
-    <section class="itens">
-        <div class="center">
-            <div class="categoria">
-                <h3>Categorias</h3>
-                <ul>
-                    <li onclick="exibirTodos()">Todos (12)</li>
-                    <li onclick="exibirCategorias('celular')">Celulares (4)</li>
-                    <li onclick="exibirCategorias('notebook')">Notebooks (3)</li>
-                    <li onclick="exibirCategorias('console')">Consoles (2)</li>
-                    <li onclick="exibirCategorias('televisao')">Televisões (3)</li>
-                </ul>
-            </div><!-- categoria -->
-
-            <div class="container-produtos">
-                <div class="produtos" id="celular">
-                    <img onclick="destaque(this)" src="./imagens/galaxys10.jpg" width="120">
-                    <p>Smartphone Samsung Galaxy S10 128GB Branco 4G<p>
-                    <p><strike>R$ 2.699,00</strike><p>
-                    <p class="red">R$2.429,10<p>
-                </div><!-- produtos -->
-
-                <div class="produtos" id="celular">
-                    <img onclick="destaque(this)" src="./imagens/mototrola.png" width="120">
-                    <p>Smartphone Motorola One Vision Bronze<p>
-                    <p><strike>R$ 1.999,00</strike><p>
-                    <p class="red">R$ 1.709,00<p>
-                </div><!-- produtos -->
-
-                <div class="produtos" id="celular">
-                    <img onclick="destaque(this)" src="./imagens/zenfone.png" width="120">
-                    <p>ASUS ZenFone 6 6GB/128GB Preto<p>
-                    <p><strike>R$ 4.489,00</strike><p>
-                    <p class="red">R$3.833,15<p>
-                </div><!-- produtos -->
-
-                <div class="produtos" id="celular">
-                    <img onclick="destaque(this)" src="./imagens/iphone.png" width="120">
-                    <p>iPhone XR Apple Preto 64GB, Tela Retina LCD de 6,1”, iOS 12<p>
-                    <p><strike>R$3.772,98</strike><p>
-                    <p class="red">R$3.399,00<p>
-                </div><!-- produtos -->
-
-                <div class="produtos" id="notebook">
-                    <img onclick="destaque(this)" src="./imagens/lenovo.png" width="120">
-                    <p>Notebook Lenovo Ultrafino ideapad S145 i7 8565U 8GB 1TB<p>
-                    <p><strike>R$ 4.489,00</strike><p>
-                    <p class="red">R$3.833,15<p>
-                </div><!-- produtos -->
-
-                <div class="produtos" id="notebook">
-                    <img onclick="destaque(this)" src="./imagens/acer.png" width="120">
-                    <p>Notebook Acer AMD Ryzen 5-3500U 8GB 1TB<p>
-                    <p><strike>R$3.899,00</strike><p>
-                    <p class="red">R$3.999,00<p>
-                </div><!-- produtos -->
-
-                <div class="produtos" id="notebook">
-                    <img onclick="destaque(this)" src="./imagens/notebook_samsung.jpg" width="120">
-                    <p>Notebook Samsung Dual Core 4GB 500GB Tela 15.6<p>
-                    <p><strike>R$2.999,00</strike><p>
-                    <p class="red">R$2.599,00<p>
-                </div><!-- produtos -->
-
-                <div class="produtos" id="console">
-                    <img onclick="destaque(this)" src="./imagens/ps4.jpg" width="120">
-                    <p>Console Playstation 4 Slim 1TB Bundle 11 + Just Dance 2020 + MediEvil + Jogos PlayLink<p>
-                    <p><strike>R$2.899,00</strike><p>
-                    <p class="red">R$2.649,00<p>
-                </div><!-- produtos -->
-
-                <div class="produtos" id="console">
-                    <img onclick="destaque(this)" src="./imagens/xbox.jpg" width="120">
-                    <p>Console Xbox One S 1TB + Jogo Star Wars Jedi: Fallen Order Deluxe Edition<p>
-                    <p><strike>R$3.299,00</strike><p>
-                    <p class="red">R$2.999,00<p>
-                </div><!-- produtos -->
-
-                <div class="produtos" id="televisao">
-                    <img onclick="destaque(this)" src="./imagens/tv_lg.jpg" width="120">
-                    <p>Smart TV LED 50" UHD 4K LG 50UN7310PSC<p>
-                    <p><strike>R$ 3.099,00</strike><p>
-                    <p class="red">R$2.299,00<p>
-                </div><!-- produtos -->
-
-                <div class="produtos" id="televisao">
-                    <img onclick="destaque(this)" src="./imagens/tv_phillips.jpg" width="120">
-                    <p>Smart TV LED 50" 4K Philips 50PUG6654/78<p>
-                    <p><strike>R$ 2.399,00</strike><p>
-                    <p class="red">R$2.099,00<p>
-                </div><!-- produtos -->
-
-                <div class="produtos" id="televisao">
-                    <img onclick="destaque(this)" src="./imagens/tv_tcl.jpg" width="120">
-                    <p>Smart TV LED 50" 4K TCL 50P8M<p>
-                    <p><strike>R$2.489,00</strike><p>
-                    <p class="red">R$2.199,00<p>
-                </div><!-- produtos -->
-            </div><!-- container-produtos -->
-            <div class="clear"></div>
-        </div><!-- center -->
-    </section><!-- itens -->
-
-    <section class="formas-pagamento">
-        <h4>Formas de pagamento</h4>
-        <img width="400" src="imagens/formas_pagamento.png">
-    </section> <!-- formas de pagamento -->
-
-    <footer class="rodape">
-        <p>&copy; Recode Pro 2020</p>
-    </footer><!-- rodape -->
+    </section><!-- container -->
 
 </body>
 </html>

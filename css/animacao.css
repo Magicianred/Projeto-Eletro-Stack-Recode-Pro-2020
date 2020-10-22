@@ -1,0 +1,10 @@
+@keyframes up{
+    to{
+        background-color: teal;
+        opacity: 0;
+    }
+    from{
+        background-color: yellow;
+        opacity: 1;
+    }
+}

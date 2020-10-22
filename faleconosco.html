@@ -2,26 +2,30 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Contato - Eletro Stack</title>
-    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <title>Eletro Stack</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/faleconosco.css" rel="stylesheet">
+    <link rel="icon" href="imagens/icon-logo.png">
+    <script async defer src="js/script.js"></script>
 </head>
 <body>
-
-    <header class="menu">
-        <div class="center">
-            <a href="index.html"><img width="400" src="imagens/LOGO1.png"></a>
+    
+    <header>
+        <div class="menu">
+            <img src="imagens/logo2.png" alt="Logo Eletro Stack">
 
             <div class="menu-itens">
                 <ul>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="produtos.html">Produtos</a></li>
                     <li><a href="lojas.html">Lojas</a></li>
-                    <li><a class="fale-conosco" href="faleconosco.html">Fale conosco</a></li>
+                    <li><a href="faleconosco.html">Fale Conosco</a></li>
                 </ul>
             </div><!-- menu-itens -->
-        </div><!-- center -->
-        <div class="clear"></div>
-    </header><!-- menu -->
-    <hr>
+        </div><!-- menu -->
+    </header>
 
     <form class="formulario">
         <h2>Envie uma mensagem para nós</h2>
@@ -36,29 +40,11 @@
         </div><!-- input -->
 
         <div class="input-submit">
-            <input type="submit" value="Enviar">
+            <input onclick="contato()" type="submit" value="Enviar">
         </div><!-- input-submit -->
 
-        <div class="email">
-            <img src="imagens/email.png" width="50">
-            <p>E-mail</p>
-        </div><!-- img -->
-
-        <div class="whatsapp">
-            <img src="imagens/whatsapp.jpg" width="50">
-            <p>whatsapp</p>
-        </div><!-- img -->
         <div class="clear"></div>
     </form>
-
-    <section class="formas-pagamento">
-        <h4>Formas de pagamento</h4>
-        <img width="400" src="imagens/formas_pagamento.png">
-    </section> <!-- formas de pagamento -->
-
-    <footer class="rodape">
-        <p>&copy; Recode Pro 2020</p>
-    </footer><!-- rodape -->
 
 </body>
 </html>
