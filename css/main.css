@@ -8,6 +8,7 @@
 
 body{
     background-color: #070709;
+    position: relative;
 }
 
 .bg{
@@ -39,4 +40,18 @@ body{
 
 .menu-itens ul li a:hover{
     border-bottom: 2px solid #0680FC;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(119, 119, 119);
+    width: 100%;
+    text-align: center;
+}
+
+footer p{
+    font-size: 15px;
 }

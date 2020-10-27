@@ -5,7 +5,7 @@
 .container{
     width: 100%;
     max-width: 1280px;
-    margin: 10px auto;
+    margin: 10px auto 0 auto;
 }
 
 .container .category{
@@ -49,6 +49,7 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    margin-bottom: 30px;
 }
 
 .container .product{

@@ -19,3 +19,11 @@
     font-size: 20px;
     animation-delay: 100ms;
 }
+
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(161, 161, 161);
+}
