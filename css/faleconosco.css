@@ -6,7 +6,7 @@
 
 .formulario{
     margin: 20px auto;
-    width: 340px;
+    width: 60%;
     text-align: center;
     background-color: rgb(27, 27, 27);
     border-radius: 10px;
@@ -60,4 +60,48 @@
 
 .formulario .input-submit > input:hover{
     background-color: #0063c7;
+}
+
+.formulario .input .produto{
+    display: block;
+}
+
+.formulario .input select{
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.formulario .input select, option{
+    width: 100%;
+    padding: 10px;
+    color: white;
+    background-color:  rgb(27, 27, 27);
+}
+
+.container-pedidos{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 980px;
+    text-align: center;
+}
+
+.table{
+    margin-top: 20px;
+    width: 90%;
+    color: white;
+    border-radius: 5px;
+    border-collapse: collapse;
+
+}
+
+.table thead{
+    border-top: 1px solid #0063c7;
+    border-bottom: 1px solid #0680FC;
+    text-align: center;
+}
+
+.table th, td{
+    text-align: left;
+    padding: 10px;
+    background-color: rgb(27, 27, 27);
 }

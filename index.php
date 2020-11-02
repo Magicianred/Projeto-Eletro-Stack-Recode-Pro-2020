@@ -13,19 +13,9 @@
 <body>
     
     <header class="bg">
-        <div class="menu">
-            <img class="animate-right" src="imagens/logo2.png" alt="Logo Eletro Stack">
-
-            <div class="menu-itens animate-right">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="produtos.html">Produtos</a></li>
-                    <li><a href="lojas.html">Lojas</a></li>
-                    <li><a href="faleconosco.html">Fale Conosco</a></li>
-                </ul>
-            </div><!-- menu-itens -->
-        </div><!-- menu -->
-
+        <?php
+            include('menu.html');
+        ?>
         <div class="container-welcome">
             <h2 class="animate-up">Seja Bem-Vindo</h2>
             <p class="animate-up">Aqui em nossa loja, programadores tem desconto em todos os produtos.</p>

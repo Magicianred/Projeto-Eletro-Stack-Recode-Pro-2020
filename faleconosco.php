@@ -1,3 +1,16 @@
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$database = "fseletro";
+
+$conn = mysqli_connect($servername, $username, $password, $database);
+
+$sql = "select * from produtos";
+$result = $conn->query($sql);
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -15,21 +28,12 @@
     
     <div class="container">
         <header>
-            <div class="menu">
-                <img class="animate-right" src="imagens/logo2.png" alt="Logo Eletro Stack">
-
-                <div class="menu-itens animate-right">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="produtos.html">Produtos</a></li>
-                        <li><a href="lojas.html">Lojas</a></li>
-                        <li><a href="faleconosco.html">Fale Conosco</a></li>
-                    </ul>
-                </div><!-- menu-itens -->
-            </div><!-- menu -->
+            <?php
+                include('menu.html');
+            ?>
         </header>
 
-        <form class="formulario">
+        <form class="formulario" method="POST">
             <h2>Envie uma mensagem para nós</h2>
             <div class="input">
                 <span>Nome</span>

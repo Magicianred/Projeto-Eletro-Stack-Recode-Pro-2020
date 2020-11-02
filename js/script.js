@@ -1,9 +1,9 @@
 function exibirCategorias(categorias) {
-    elements = document.getElementsByClassName("product");
+    let elements = document.getElementsByClassName("product");
     for(i = 0; i < elements.length; i ++){
         console.log(elements[i]);
         if(categorias == elements[i].id){
-            elements[i].style = "display: inline-block;";
+            elements[i].style = "visibility: visible;";
         }else{
             elements[i].style = "display: none;";
         }
@@ -11,7 +11,7 @@ function exibirCategorias(categorias) {
 }
 
 function exibirTodos() {
-    elements = document.getElementsByClassName("product");
+    let elements = document.getElementsByClassName("product");
     for(i = 0; i < elements.length; i ++){
         elements[i].style = "display: inline-block;";
     }
