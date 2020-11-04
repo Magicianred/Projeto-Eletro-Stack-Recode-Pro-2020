@@ -19,3 +19,8 @@ form .titulo-pedido{
     border: 0;
     border-bottom: 1px solid royalblue;
 }
+
+.form-group .form-control .option{
+    color: white;
+    background-color: #070709;
+}

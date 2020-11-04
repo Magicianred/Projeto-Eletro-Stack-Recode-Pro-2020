@@ -2,13 +2,14 @@
     clear: both;
 }
 
-.container{
+.container-principal{
+    padding: 0;
     width: 100%;
     max-width: 1280px;
     margin: 10px auto 0 auto;
 }
 
-.container .category{
+.container-principal .category{
     float: left;
     width: 100%;
     max-width: 240px;
@@ -17,20 +18,22 @@
     padding: 5px;
     background-color: rgb(27, 27, 27);
     border-radius: 5px;
+    margin-bottom: 5px;
 }
 
-.container .category h2{
+.container-principal .category h2{
     background-color: #070709;
     padding: 5px;
     border-radius: 5px;
+    font-size: 20px;
 }
 
-.container .category ul li{
+.container-principal .category ul li{
     list-style-type: none;
     margin-top: 10px;
 }
 
-.container .category ul li a{
+.container-principal .category ul li a{
     padding: 5px;
     display: block;
     color: white;
@@ -38,11 +41,11 @@
     border: 1px solid transparent;
 }
 
-.container .category ul li a:hover{
-    border: 1px solid #0680FC;
+.container-principal .category ul li a:hover{
+    border: 1px solid royalblue;
 }
 
-.container .container-product{
+.container-principal .container-product{
     float: right;
     width: 100%;
     max-width: 1020px;
@@ -52,8 +55,9 @@
     margin-bottom: 30px;
 }
 
-.container .product{
-    width: 190px;
+.container-principal .product{
+    width: 100%;
+    max-width: 190px;
     color: white;
     overflow: hidden;
     padding: 5px;
@@ -98,7 +102,11 @@
 .product .price-product .canceled{
     text-decoration: line-through;
     font-size: 14px;
-    color: #0680FC;
+    color: royalblue;
+}
+
+.product .price-product h2{
+    font-size: 25px;
 }
 
 .product .buy{
@@ -112,7 +120,7 @@
     border-radius: 5px;
     font-size: 18px;
     font-weight: normal;
-    background-color: #0680FC;
+    background-color: royalblue;
     margin-top: 10px;
     position: relative;
     top: 50px;
@@ -120,7 +128,7 @@
 }
 
 .product:hover{
-    border: 1px solid #0680FC;
+    border: 1px solid royalblue;
     background-color: rgb(36, 36, 36);
 }
 
@@ -129,5 +137,5 @@
 }
 
 .product .buy:hover{
-    background-color: #0063c7;
+    background-color: rgb(43, 73, 161);
 }

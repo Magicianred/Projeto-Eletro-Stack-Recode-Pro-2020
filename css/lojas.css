@@ -1,9 +1,3 @@
-.container{
-    width: 100%;
-    height: 100vh;
-    position: relative;
-}
-
 .stores{
     margin: 20px 0;
     color: white;
@@ -30,6 +24,6 @@
 }
 
 .stores .locations h3{
-    color: #007eff;
-    border-bottom: 1px solid #007eff;
+    color: royalblue;
+    border-bottom: 1px solid royalblue;
 }

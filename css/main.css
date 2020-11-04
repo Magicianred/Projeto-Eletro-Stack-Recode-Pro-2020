@@ -6,6 +6,10 @@
     font-family: 'Nunito Sans', sans-serif;
 }
 
+a:hover{
+    text-decoration: none;
+}
+
 body{
     background-color: #070709;
     position: relative;
@@ -20,26 +24,15 @@ body{
     background-size: cover;
 }
 
-.menu{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 40px;
-}
-
-.menu-itens ul li{
-    display: inline-block;
-}
-
-.menu-itens ul li a{
-    color: white;
+.collapse .navbar-nav .menu-itens a{
     padding: 8px 12px;
-    transition: 200ms;
     border-bottom: 2px solid transparent;
+    transition: 300ms;
 }
 
-.menu-itens ul li a:hover{
-    border-bottom: 2px solid #0680FC;
+.collapse .navbar-nav .menu-itens a:hover{
+    color: white;
+    border-bottom: 2px solid royalblue;
 }
 
 footer{
