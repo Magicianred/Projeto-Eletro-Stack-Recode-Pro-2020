@@ -1,11 +1,6 @@
 <?php
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$database = "fseletro";
-
-$conn = mysqli_connect($servername, $username, $password, $database);
+require_once('db-connect.php');
 
 $sql = "select * from pedidos";
 $result = $conn->query($sql);
@@ -24,15 +19,16 @@ $result = $conn->query($sql);
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <link href="css/meuspedidos.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-    <link href="css/faleconosco.css" rel="stylesheet">
+    <link href="../css/meuspedidos.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/faleconosco.css" rel="stylesheet">
+    <link href="../imagens/icon-logo.png" rel="icon">
     <title>Pedidos</title>
 </head>
 <body>
     <header>
     <?php 
-    include('menu.html');
+    include('menu.php');
     ?>
     </header>
 
@@ -49,10 +45,10 @@ $result = $conn->query($sql);
 
         $insert = "insert into pedidos(nomecliente, endereco, telefone, nomeproduto, valorunitario, quantidade, valortotal) values('$nomecliente', '$endereco', '$telefone', '$produto', '$preco', '$quantidade', '$total')";
         $result = $conn->query($insert);
-        $consulta = "select * from pedidos";
+        $consulta = "select * from cliente inner join pedidos on cliente.id_cliente = pedidos.id_cliente;";
         $mostraConsulta = $conn->query($consulta);
     }else{
-        $consulta = "select * from pedidos";
+        $consulta = "select * from cliente inner join pedidos on cliente.id_cliente = pedidos.id_cliente;";
         $mostraConsulta = $conn->query($consulta);
     }
     
@@ -88,11 +84,11 @@ $result = $conn->query($sql);
             <tbody>
                 <?php while($row = $mostraConsulta->fetch_assoc()){ ?>
                 <tr>
-                    <td><?php echo $row['nomecliente'] ?></td>
+                    <td><?php echo $row['nome'] ?></td>
                     <td><?php echo $row['endereco'] ?></td>
                     <td><?php echo $row['telefone'] ?></td>
-                    <td><?php echo $row['nomeproduto'] ?></td>
-                    <td><?php echo $row['valorunitario'] ?></td>
+                    <td><?php echo $row['produto'] ?></td>
+                    <td><?php echo $row['preco'] ?></td>
                     <td><?php echo $row['quantidade'] ?></td>
                     <td><?php echo $row['valortotal'] ?></td>
                 </tr>

@@ -2,6 +2,11 @@
     clear: both;
 }
 
+.menu-itens .nav-link .ativo{
+    color: white;
+    border-bottom: 1px solid royalblue;
+}
+
 .container-principal{
     padding: 0;
     width: 100%;
@@ -33,7 +38,7 @@
     margin-top: 10px;
 }
 
-.container-principal .category ul li a{
+.container-principal .category ul li{
     padding: 5px;
     display: block;
     color: white;
@@ -41,7 +46,7 @@
     border: 1px solid transparent;
 }
 
-.container-principal .category ul li a:hover{
+.container-principal .category ul li:hover{
     border: 1px solid royalblue;
 }
 
@@ -53,6 +58,7 @@
     align-items: center;
     flex-wrap: wrap;
     margin-bottom: 30px;
+
 }
 
 .container-principal .product{
@@ -110,21 +116,11 @@
 }
 
 .product .buy{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 40px;
-    color: white;
-    border: 0;
-    border-radius: 5px;
-    font-size: 18px;
-    font-weight: normal;
-    background-color: royalblue;
     margin-top: 10px;
     position: relative;
     top: 50px;
-    transition: 300ms;
+    transition: 200ms;
+    background-color: royalblue;
 }
 
 .product:hover{
@@ -137,5 +133,5 @@
 }
 
 .product .buy:hover{
-    background-color: rgb(43, 73, 161);
+    background-color: rgb(0, 89, 255);
 }
